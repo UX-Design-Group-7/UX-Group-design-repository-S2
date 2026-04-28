@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking Confirmation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="nav-left" onclick="goBack()" style="cursor: pointer;">←</div>
+      Booking Confirmation
+      <div class="nav-right"></div>
+    </header>
+
+    <main class="screen-content">
+      <!-- Booking Confirmed -->
+      <div style="text-align: center; padding: 24px 18px 0;">
+        <div class="confirmation-icon">✅</div>
+        <h1 class="confirmation-title">Booking Confirmed!</h1>
+        <p class="small muted" style="margin: 8px 0 0;">Your tickets have been sent to Leeds Grand Theatre</p>
+      </div>
+
+      <!-- Your Ticket QR Code -->
+      <section class="booking-section">
+        <h2 class="section-heading">🎫 Your Ticket QR Code</h2>
+        <p class="small muted" style="padding: 0 18px 10px; text-align: center;">Present this code at the venue</p>
+        <div class="qr-container">
+          <div class="qr-code-large"></div>
+          <div class="ticket-number">Ticket #LDS7320007</div>
+        </div>
+      </section>
+
+      <!-- Booking Details -->
+      <section class="booking-section">
+        <h2 class="section-heading">📋 Booking Details</h2>
+        <div class="summary-detail">
+          <div class="detail-row">
+            <span class="label">Event</span>
+            <strong>La Traviata</strong>
+          </div>
+          <div class="detail-row">
+            <span class="label">Date & Time</span>
+            <div class="detail-value">
+              <strong>Friday, February 20, 2026</strong>
+              <span class="small muted">at 19:00 · 2 hours (including interval)</span>
+            </div>
+          </div>
+          <div class="detail-row">
+            <span class="label">Venue</span>
+            <strong>📍 Leeds Grand Theatre</strong>
+          </div>
+          <div class="detail-row">
+            <span class="label">Your Seats (1)</span>
+            <div class="detail-value">
+              <strong>Stalls · Row A, Seat 9</strong>
+              <span class="price-tag">£65</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payment Summary -->
+      <section class="booking-section">
+        <h2 class="section-heading">💳 Payment Summary</h2>
+        <div class="payment-summary" style="display: flex; flex-direction: column; gap: 0;">
+          <div class="breakdown-row">
+            <span>Tickets (1)</span>
+            <span>£65.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Booking Fee</span>
+            <span>£3.25</span>
+          </div>
+          <div class="breakdown-row total" style="border-top: 1px solid rgba(0,0,0,0.1); padding-top: 8px; margin-top: 8px;">
+            <span>Total Paid</span>
+            <span class="total-price">£68.25</span>
+          </div>
+        </div>
+        <div class="small muted" style="text-align: center; padding: 10px 0 0; margin: 0;">
+          Booked on December 3, 2025 at 12:34
+        </div>
+      </section>
+
+      <!-- Action Buttons -->
+      <div class="button-group">
+        <button class="btn btn-outline btn-block" type="button">⬇️ Download</button>
+        <button class="btn btn-outline btn-block" type="button">📤 Share</button>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="button-group">
+        <button class="btn btn-outline btn-block" type="button" onclick="window.location.href='tickets.html'">🎫 View All Tickets</button>
+        <button class="btn btn-outline btn-block" type="button" onclick="window.location.href='browse.html'">🏠 Back to Home</button>
+      </div>
+
+      <!-- Important Information -->
+      <section class="booking-section">
+        <h2 class="section-heading">⚠️ Important Information</h2>
+        <ul class="important-info">
+          <li>Please arrive at least 30 minutes before the show</li>
+          <li>Tickets are non-exchangeable but may be transferable</li>
+          <li>Keep this email safe as proof of purchase</li>
+        </ul>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="browse.html"><span class="icon">🏠</span><span>Home</span></a>
+      <a href="browse.html"><span class="icon">🔎</span><span>Browse</span></a>
+      <a href="saved.html"><span class="icon">💗</span><span>Saved</span></a>
+      <a class="active" href="tickets.html"><span class="icon">🎫</span><span>Ticket</span></a>
+      <a href="profile.html"><span class="icon">👤</span><span>Profile</span></a>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

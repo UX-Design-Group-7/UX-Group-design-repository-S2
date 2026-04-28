@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Complete Booking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="nav-left" onclick="goBack()" style="cursor: pointer;">←</div>
+      Complete Booking
+      <div class="nav-right"></div>
+    </header>
+
+    <main class="screen-content">
+      <!-- Booking Summary -->
+      <section class="booking-section">
+        <h2 class="section-heading">🎫 Booking Summary</h2>
+        <div class="summary-detail">
+          <div class="detail-row">
+            <span class="label">Event</span>
+            <strong>La Traviata</strong>
+          </div>
+          <div class="detail-row">
+            <span class="label">Date & Time</span>
+            <div class="detail-value">
+              <strong>Friday, February 20, 2026</strong>
+              <span class="small muted">at 19:00 · 2 hours (including interval)</span>
+            </div>
+          </div>
+          <div class="detail-row">
+            <span class="label">Venue</span>
+            <strong>📍 Leeds Grand Theatre</strong>
+          </div>
+          <div class="detail-row">
+            <span class="label">Your Seats</span>
+            <div class="detail-value">
+              <strong>Stalls · Row A, Seat 9</strong>
+              <span class="price-tag">£65</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Information -->
+      <section class="booking-section">
+        <h2 class="section-heading">👤 Contact Information</h2>
+        <div class="form-shell">
+          <div class="form-group">
+            <label for="fullname">Full Name *</label>
+            <input id="fullname" type="text" placeholder="eg. Jane Doe..." />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input id="email" type="email" placeholder="eg. janedoe@gmail.com" />
+          </div>
+          <div class="small muted" style="padding: 6px 12px 0;">Tickets will be sent to this email</div>
+        </div>
+      </section>
+
+      <!-- Payment Information -->
+      <section class="booking-section">
+        <h2 class="section-heading">💳 Payment Information</h2>
+        <div class="form-shell">
+          <div class="form-group">
+            <label for="card">Card Number *</label>
+            <input id="card" type="text" placeholder="1234 5678 9012 3456" />
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="expiry">Expiry Date *</label>
+              <input id="expiry" type="text" placeholder="MM / YY" />
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV *</label>
+              <input id="cvv" type="password" placeholder="123" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Price Breakdown -->
+      <section class="booking-section">
+        <h2 class="section-heading">💰 Price Breakdown</h2>
+        <div class="price-breakdown">
+          <div class="breakdown-row">
+            <span>Tickets (1)</span>
+            <span class="price">£65.00</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Booking Fee</span>
+            <span class="price">£3.25</span>
+          </div>
+          <div class="breakdown-row total">
+            <span>Total</span>
+            <span class="total-price">£68.25</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Terms & Pay -->
+      <div style="padding: 12px 18px 0; font-size: 12px; color: var(--muted); text-align: center;">
+        By completing this booking, you agree to our terms and conditions
+      </div>
+
+      <button class="btn btn-gold btn-block" type="button" onclick="goToConfirmation()">Pay £68.25 →</button>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="browse.html"><span class="icon">🏠</span><span>Home</span></a>
+      <a href="browse.html"><span class="icon">🔎</span><span>Browse</span></a>
+      <a href="saved.html"><span class="icon">💗</span><span>Saved</span></a>
+      <a href="tickets.html"><span class="icon">🎫</span><span>Ticket</span></a>
+      <a href="profile.html"><span class="icon">👤</span><span>Profile</span></a>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
