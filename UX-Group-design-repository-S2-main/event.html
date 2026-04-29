@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Event</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="nav-left" onclick="goBack()" style="cursor: pointer;">←</div>
+      Event Details
+      <div class="nav-right"><span>💗</span><span>⋮</span></div>
+    </header>
+
+    <main class="screen-content">
+      <div class="detail-hero">🎭</div>
+      <div class="detail-text">
+        <div class="detail-title">La Traviata</div>
+        <div class="detail-subtitle">Opera in three acts - Verdi</div>
+        <div class="detail-line"></div>
+        <div class="detail-info">
+          <div>📍 Leeds Grand Theatre</div>
+          <div>📅 Friday 14 March · 7:30pm</div>
+          <div>⏱ Running time: 2hr 45min</div>
+          <div class="detail-callout">ℹ️ Accessible seating available</div>
+        </div>
+        <div class="detail-line"></div>
+        <p class="detail-description">
+          A timeless story of love and sacrifice, sung in Italian with English surtitles above the stage. [more]
+        </p>
+      </div>
+
+      <button class="btn btn-primary btn-block" type="button" onclick="goToDate()">BOOK TICKETS →</button>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="browse.html"><span class="icon">🏠</span><span>Home</span></a>
+      <a class="active" href="browse.html"><span class="icon">🔎</span><span>Browse</span></a>
+      <a href="saved.html"><span class="icon">💗</span><span>Saved</span></a>
+      <a href="tickets.html"><span class="icon">🎫</span><span>Ticket</span></a>
+      <a href="profile.html"><span class="icon">👤</span><span>Profile</span></a>
+    </nav>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
